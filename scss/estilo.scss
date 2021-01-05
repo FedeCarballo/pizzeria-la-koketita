@@ -1,0 +1,229 @@
+//variables sass//
+$colorDeCuerpo: sandybrown;
+
+@mixin medidas($width,$height) {
+    height:$height;
+    width: $width;
+}
+@mixin MyP($margin,$padding) {
+    margin: $margin;
+    padding: $padding;
+}
+@mixin display($display,$justify) {
+    display: $display;
+    justify-content: $justify;
+}
+ @media (min-width: 900px)
+        { 
+    #products{
+        display: none;
+    }
+   }
+@media (max-width: 900px)
+{
+    #products2{
+        display: none;
+    }
+}
+//variables sass//
+
+//ajustes generales//
+*{
+    padding: 0px;
+    font-size: 1.06rem !important;
+    list-style-type: none;
+}
+a{
+
+    text-decoration: none !important;
+}
+body{ 
+    margin: 0px;
+}
+//ajustes generales//
+
+//barra de navegacion y cabecera de pagina//
+nav {
+   @include MyP(0px,0px);
+    @include display(flex,space-around);
+    width: 100%;
+    flex-flow: row nowrap;
+    background-color: $colorDeCuerpo;
+a {
+    text-decoration: none;
+    color:white !important;
+    text-align: center;
+    flex-grow: 1;
+        &:hover{
+            background-color: rgb(0, 0, 0);
+            border: ridge 1px;
+        }
+    } 
+}
+.header__header {
+    background-color: $colorDeCuerpo;
+    @include display(flex,space-between);
+    padding: 2px;
+    align-items: center;
+}
+.ColorDeTitulo{
+    color:black;
+    letter-spacing: 3px;
+    font-size: 42px !important;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    filter: drop-shadow(0 9px 5px);
+}
+#logo img{
+    width: 90px;
+}
+//barra de navegacion y cabecera de pagina//
+
+//inicio//
+#inicio {
+    display: flex;
+    flex-direction: row;
+}
+article{
+    margin-top: 12px;
+}
+#products{
+    padding:7%; 
+    filter:drop-shadow(0px 8px 8px #111111);
+        div 
+            div{
+                width: 50%;
+                margin-top: 15px;
+                div{
+                    margin-left: 15px;
+        }
+    }
+}
+#products2 {
+    padding: 15px;
+    list-style-position: inside; margin-left: 10px; 
+    filter:drop-shadow(3px 8px 8px #111111);
+        ul{
+            margin-left: 10%;
+    }
+}
+//inicio//
+
+//productos//
+#selector{
+    @include display(flex,center);
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+        figure{
+        @include medidas(460px,410px);
+        position: relative; 
+        overflow: hidden;
+        cursor: pointer;
+        filter: drop-shadow(0 0px 7px rgb(17, 17, 17));
+        border-radius: 2%;
+            .capa {
+                @include medidas(100%,100%);
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                    h2{
+                        position: relative;
+                        color: black;
+                        margin-top: 1px;
+                        margin-left: 190px;
+                        margin-bottom: 100px;
+                        transition: all 500ms ease-in-out;
+                        filter: drop-shadow(0 3px 1px white);
+                    }
+                }
+            img{
+            border-radius: 2px;
+            @include medidas(100%,100%);
+            transition: all 500ms ease-in-out; 
+                }
+            &:hover > .capa{
+            opacity: 1;
+            visibility: visible;
+            transition: all 500ms ease-in-out;
+                h2{
+                        margin-top: 70px;
+                        margin-bottom: 15px;
+                        font-size: 30px !important;
+                    }
+                img{
+                    position: absolute;
+                    transition: all 500ms ease-in-out;
+                    transform: scale(1.3);
+                }
+            }      
+        &:hover > img {
+            transform: scale(1.3);
+        }
+    } 
+}
+.products__products{
+    @include MyP(5px,5px);
+    @include display(flex,space-around);
+    flex-flow: wrap;
+    width: 100%;
+    div{
+        
+        width: 49%;
+    }
+}
+.products__botones {
+    @include MyP(9px,0px);
+    @include display(flex,space-between);
+}
+
+//productos//
+
+//contacto//
+.google {
+    margin-top: 15px;
+}
+#contacto .mediosdecontacto{
+    @include MyP(0px,0px);
+    display:grid;
+    grid-template-columns: 20% 76%;
+    grid-template-areas:
+    "h2 aside1"
+    "h2 aside2"
+    "h2 aside3";
+}
+#contacto aside{
+    @include MyP(18px,5px);
+    background-color: #457b9d;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contacto div h2{
+    grid-area: h2;
+    color: rgb(0, 0, 0);
+}
+.MedioDeContacto1{
+    grid-area: aside1;
+}
+.MedioDeContacto2{
+    grid-area: aside2;
+}
+.MedioDeContacto3{
+    grid-area: aside3;
+}
+//contacto//
+
+//footer//
+footer{
+    @include MyP(0px,0px);
+    @include display(flex,space-between);
+    background-color: #22455a;
+    color: #ffffff;
+    align-items: center;
+    h2{
+        margin-right: 8px;
+    }
+}
