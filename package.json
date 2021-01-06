@@ -14,5 +14,13 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedeCarballo/proyecto1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FedeCarballo/proyecto1/issues"
+  },
+  "homepage": "https://github.com/FedeCarballo/proyecto1#readme",
   "description": ""
 }
