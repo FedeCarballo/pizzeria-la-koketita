@@ -178,6 +178,12 @@ div div {
 .MedioDeContacto3 {
   grid-area: aside3; }
 
+.aboutUs__Texto {
+  margin-top: 20px;
+  width: 80%; }
+  .aboutUs__Texto p {
+    font-size: 21px !important; }
+
 footer {
   margin: 0px;
   padding: 0px;
