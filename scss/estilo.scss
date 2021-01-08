@@ -1,5 +1,5 @@
 //variables sass//
-$colorDeCuerpo: sandybrown;
+$colorDeCuerpo: rgb(243, 146, 61);
 
 @mixin medidas($width,$height) {
     height:$height;
@@ -27,10 +27,16 @@ $colorDeCuerpo: sandybrown;
         
     }
 }
-@media (max-width: 575.98px) {  
+@media (max-width: 590px) {  
     #inicio{
         display: block !important;
-        } 
+    } 
+    .products__products {
+        display: inline;
+        div{
+            width: 100% !important;
+        }
+    }
 }
 
 //variables sass//
@@ -92,13 +98,16 @@ a {
 #inicio {
     display: flex;
     flex-direction: row;
-}
-article{
     margin-top: 12px;
+    margin-bottom: 12px;
 }
+
 #products{
-    padding:7%; 
+    background-color: $colorDeCuerpo;
+    padding:7%;
+    p{ 
     filter:drop-shadow(0px 8px 8px #111111);
+    }
         div 
             div{
                 width: 50%;
@@ -109,11 +118,13 @@ article{
     }
 }
 #products2 {
-    padding: 15px;
-    list-style-position: inside; margin-left: 10px; 
-    filter:drop-shadow(3px 8px 8px #111111);
-        ul{
-            margin-left: 10%;
+    background-color: $colorDeCuerpo;
+    padding: 10px;
+    list-style-position: inside; 
+    margin-left: 4px; 
+    ul{
+        margin-left: 10%;
+        filter:drop-shadow(3px 8px 8px #111111);
     }
 }
 //inicio//
@@ -178,8 +189,7 @@ article{
     flex-flow: wrap;
     width: 100%;
     div{
-        
-        width: 49%;
+        width: 50%;
     }
 }
 .products__botones {
@@ -237,9 +247,13 @@ article{
 footer{
     @include MyP(0px,0px);
     @include display(flex,space-between);
-    background-color: #22455a;
+    background-color: $colorDeCuerpo;
     color: #ffffff;
     align-items: center;
-    h2{
+    a{
+    margin-left:25%;
+        h2{
+            color:white;
+        }
     }
 }

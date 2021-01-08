@@ -6,9 +6,13 @@
   #products2 {
     display: none; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 590px) {
   #inicio {
-    display: block !important; } }
+    display: block !important; }
+  .products__products {
+    display: inline; }
+    .products__products div {
+      width: 100% !important; } }
 
 * {
   padding: 0px;
@@ -28,7 +32,7 @@ nav {
   justify-content: space-around;
   width: 100%;
   flex-flow: row nowrap;
-  background-color: sandybrown; }
+  background-color: #f3923d; }
   nav a {
     text-decoration: none;
     color: white !important;
@@ -39,7 +43,7 @@ nav {
       border: ridge 1px; }
 
 .header__header {
-  background-color: sandybrown;
+  background-color: #f3923d;
   display: flex;
   justify-content: space-between;
   padding: 2px;
@@ -59,14 +63,15 @@ nav {
 
 #inicio {
   display: flex;
-  flex-direction: row; }
-
-article {
-  margin-top: 12px; }
+  flex-direction: row;
+  margin-top: 12px;
+  margin-bottom: 12px; }
 
 #products {
-  padding: 7%;
-  filter: drop-shadow(0px 8px 8px #111111); }
+  background-color: #f3923d;
+  padding: 7%; }
+  #products p {
+    filter: drop-shadow(0px 8px 8px #111111); }
   #products div
 div {
     width: 50%;
@@ -76,12 +81,13 @@ div div {
       margin-left: 15px; }
 
 #products2 {
-  padding: 15px;
+  background-color: #f3923d;
+  padding: 10px;
   list-style-position: inside;
-  margin-left: 10px;
-  filter: drop-shadow(3px 8px 8px #111111); }
+  margin-left: 4px; }
   #products2 ul {
-    margin-left: 10%; }
+    margin-left: 10%;
+    filter: drop-shadow(3px 8px 8px #111111); }
 
 #selector {
   display: flex;
@@ -140,7 +146,7 @@ div div {
   flex-flow: wrap;
   width: 100%; }
   .products__products div {
-    width: 49%; }
+    width: 50%; }
 
 .products__botones {
   margin: 9px;
@@ -189,6 +195,10 @@ footer {
   padding: 0px;
   display: flex;
   justify-content: space-between;
-  background-color: #22455a;
+  background-color: #f3923d;
   color: #ffffff;
   align-items: center; }
+  footer a {
+    margin-left: 25%; }
+    footer a h2 {
+      color: white; }
