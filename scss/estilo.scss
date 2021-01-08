@@ -37,6 +37,13 @@ $colorDeCuerpo: rgb(243, 146, 61);
             width: 100% !important;
         }
     }
+    
+    footer {
+        h2{
+        font-size: small !important;
+        }   
+    }
+
 }
 
 //variables sass//
@@ -137,7 +144,7 @@ a {
     align-items: center;
     height: 100%;
         figure{
-        @include medidas(460px,410px);
+        @include medidas(375px,360px);
         position: relative; 
         overflow: hidden;
         cursor: pointer;

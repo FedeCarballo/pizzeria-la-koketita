@@ -45,26 +45,25 @@
                   </div>
                 </nav>
         <div class="card col-8 m-auto">
-            <div class="card-body opiniones__formulario">
-                <form>
+            <div class="card-body">
+                <form method="POST" action="correo.php">
                     <div class="form-group ">
                         <label for="Nombre">Nombre</label>
-                        <input class="form-control" type="text" name="nombre">
+                        <input class="form-control" type="text" id="nombre" name="nombre">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="apellido">Apellido</label>
                         <input class="form-control" type="text" name="apellido">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input class="form-control" type="email">    
                     </div>
-                    <div>
-                        <label for="opinion">Dejanos tu comentario</label>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="form-group">
+                        <label for="msg">Dejanos tu comentario</label>
+                        <textarea type="email" placeholder="coloque su mensaje aqui" class="form-control" name="" id="msg" name="msg"></textarea>
                     </div>
-                        <button type="button" class="btn alert-success">Enviar</button>
-                        <button type="button" class="btn alert-danger">Borrar formulario</button>
+                        <input type="submit" class="btn btn-primary" name="enviar" value="enviar comentario">
                 </form>
             </div>
         </div>
