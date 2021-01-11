@@ -53,11 +53,9 @@ nav {
 
 .ColorDeTitulo {
   color: black;
-  letter-spacing: 3px;
-  font-size: 37px !important;
+  letter-spacing: 2px;
+  font-size: 36px !important;
   display: inline;
-  text-decoration: none;
-  list-style: none;
   filter: drop-shadow(0 9px 5px); }
 
 #logo img {
@@ -116,9 +114,9 @@ div div {
         position: relative;
         color: black;
         margin-top: 1px;
-        margin-left: 190px;
+        margin-left: 100px;
         margin-bottom: 100px;
-        transition: all 500ms ease-in-out;
+        transition: all 600ms ease-in-out;
         filter: drop-shadow(0 3px 1px white); }
     #selector figure img {
       border-radius: 2px;
@@ -128,9 +126,10 @@ div div {
     #selector figure:hover > .capa {
       opacity: 1;
       visibility: visible;
-      transition: all 500ms ease-in-out; }
+      transition: all 600ms ease-in-out; }
       #selector figure:hover > .capa h2 {
-        margin-top: 70px;
+        margin-top: 10px;
+        margin-left: 100px;
         margin-bottom: 15px;
         font-size: 30px !important; }
       #selector figure:hover > .capa img {
@@ -204,3 +203,5 @@ footer {
     margin-left: 25%; }
     footer a h2 {
       color: white; }
+  footer h2 {
+    margin-right: 10px; }
