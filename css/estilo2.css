@@ -52,11 +52,11 @@ nav {
   align-items: center; }
 
 .ColorDeTitulo {
-  color: black;
+  color: #f70909;
   letter-spacing: 2px;
-  font-size: 36px !important;
+  font-size: 37px !important;
   display: inline;
-  filter: drop-shadow(0 9px 5px); }
+  text-shadow: 0px 1px 2px black; }
 
 #logo img {
   width: 90px; }
@@ -70,8 +70,6 @@ nav {
 #products {
   background-color: #f3923d;
   padding: 7%; }
-  #products p {
-    filter: drop-shadow(0px 8px 8px #111111); }
   #products div
 div {
     width: 50%;
@@ -86,8 +84,7 @@ div div {
   list-style-position: inside;
   margin-left: 4px; }
   #products2 ul {
-    margin-left: 10%;
-    filter: drop-shadow(3px 8px 8px #111111); }
+    margin-left: 10%; }
 
 #selector {
   display: flex;
@@ -166,11 +163,10 @@ div div {
   grid-template-areas: "h2 aside1" "h2 aside2" "h2 aside3"; }
 
 #contacto aside {
-  margin: 18px;
-  padding: 5px;
-  background-color: #457b9d;
-  width: 100%;
-  justify-content: space-between; }
+  margin: 8px;
+  padding: 9px;
+  border: solid grey 3px;
+  width: 100%; }
 
 #contacto div h2 {
   grid-area: h2;
@@ -185,11 +181,26 @@ div div {
 .MedioDeContacto3 {
   grid-area: aside3; }
 
+.contacto__h2 {
+  margin-top: 13px;
+  text-align: center;
+  justify-content: center; }
+  .contacto__h2 h2 {
+    font-size: larger !important; }
+  .contacto__h2 img {
+    width: 20%; }
+
 .aboutUs__Texto {
+  display: flex;
   margin-top: 20px;
   width: 80%; }
+  .aboutUs__Texto h5 {
+    font-size: larger !important; }
   .aboutUs__Texto p {
+    text-align: center;
     font-size: 21px !important; }
+  .aboutUs__Texto img {
+    height: 90%; }
 
 footer {
   margin: 0px;

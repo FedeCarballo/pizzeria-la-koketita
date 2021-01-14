@@ -88,11 +88,11 @@ a {
     align-items: center;
 }
 .ColorDeTitulo{
-    color:black;
+    color:rgb(247, 9, 9);
     letter-spacing: 2px;
-    font-size: 36px !important;
+    font-size: 37px !important;
     display: inline;
-    filter: drop-shadow(0 9px 5px);
+    text-shadow: 0px 1px 2px black ;
 }
 #logo img{
     width: 90px;
@@ -110,9 +110,6 @@ a {
 #products{
     background-color: $colorDeCuerpo;
     padding:7%;
-    p{ 
-    filter:drop-shadow(0px 8px 8px #111111);
-    }
         div 
             div{
                 width: 50%;
@@ -129,7 +126,6 @@ a {
     margin-left: 4px; 
     ul{
         margin-left: 10%;
-        filter:drop-shadow(3px 8px 8px #111111);
     }
 }
 //inicio//
@@ -219,15 +215,16 @@ a {
     "h2 aside3";
 }
 #contacto aside{
-    @include MyP(18px,5px);
-    background-color: #457b9d;
+    @include MyP(8px,9px);
+    border:solid grey 3px;
     width: 100%;
-    justify-content: space-between;
+    
 }
 
 #contacto div h2{
     grid-area: h2;
     color: rgb(0, 0, 0);
+    
 }
 .MedioDeContacto1{
     grid-area: aside1;
@@ -238,17 +235,36 @@ a {
 .MedioDeContacto3{
     grid-area: aside3;
 }
+.contacto__h2
+    {
+    margin-top: 13px;
+    text-align: center;
+    justify-content: center;
+    h2{
+        font-size: larger !important;
+    }
+    img{
+        width: 20%;
+    }
+}
+
 //contacto//
 //aboutUS
 .aboutUs__Texto{
+    display: flex;
     margin-top: 20px;
     width: 80%;
-    p{
+    h5{
+        font-size: larger !important;
+    }
+    p{  text-align: center;
         font-size: 21px !important;
+    }
+    img{
+      height: 90%;
     }
 }
 //aboutUS
-
 //footer//
 footer{
     @include MyP(0px,0px);
