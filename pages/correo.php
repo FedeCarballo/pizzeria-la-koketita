@@ -13,19 +13,19 @@
             if($mail){
                 echo "<script>
                         alert('Gracias! su comentario nos ayuda a seguir creciendo');
-                        window.location='index.html'
+                        window.location='../index.html'
                         </script>";
             }else{
                 echo "<script>
                         alert('No sos vos, soy yo.Lamento decirte que no he podido enviar su consulta');
-                        window.location='index.html'
+                        window.location='../index.html'
                         </script>";
             }
         }
         else{
             echo "<script>
             alert('Error faltan parametros');
-                    window.location='index.html'
+                    window.location='../index.html'
                   </script>"; 
         }
     }  

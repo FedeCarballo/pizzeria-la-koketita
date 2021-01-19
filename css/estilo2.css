@@ -6,20 +6,33 @@
   #products2 {
     display: none; } }
 
-@media (max-width: 590px) {
+@media (max-width: 780px) {
+  h2 {
+    font-size: 23px; }
+  h3, p {
+    font-size: 1.1rem !important; }
+  .ColorDeTitulo {
+    font-size: 1.7rem !important; }
   #inicio {
     display: block !important; }
   .products__products {
     display: inline; }
     .products__products div {
       width: 100% !important; }
+  #contacto div h2 {
+    font-size: 1rem !important; }
+  .aboutUs__Texto h5 {
+    font-size: 1.3rem !important; }
+  .aboutUs__Texto p {
+    font-size: 1rem !important; }
   footer h2 {
     font-size: small !important; } }
 
 * {
   padding: 0px;
-  font-size: 1.06rem !important;
-  list-style-type: none; }
+  font-size: 1;
+  list-style-type: none;
+  font-family: 'Charm', cursive; }
 
 a {
   text-decoration: none !important; }
@@ -54,9 +67,10 @@ nav {
 .ColorDeTitulo {
   color: #f70909;
   letter-spacing: 2px;
-  font-size: 37px !important;
   display: inline;
-  text-shadow: 0px 1px 2px black; }
+  text-shadow: 0px 2px 1px #585858;
+  -webkit-text-stroke: 1px black;
+  color: red; }
 
 #logo img {
   width: 90px; }
@@ -75,8 +89,11 @@ div {
     width: 50%;
     margin-top: 15px; }
     #products div
+div h2 {
+      font-size: 1.8rem; }
+    #products div
 div div {
-      margin-left: 15px; }
+      margin-left: 20px; }
 
 #products2 {
   background-color: #f3923d;
@@ -109,12 +126,12 @@ div div {
       visibility: hidden; }
       #selector figure .capa h2 {
         position: relative;
-        color: black;
+        color: white;
         margin-top: 1px;
         margin-left: 100px;
         margin-bottom: 100px;
         transition: all 600ms ease-in-out;
-        filter: drop-shadow(0 3px 1px white); }
+        filter: drop-shadow(0 3px 1px #050505); }
     #selector figure img {
       border-radius: 2px;
       height: 100%;
@@ -125,10 +142,14 @@ div div {
       visibility: visible;
       transition: all 600ms ease-in-out; }
       #selector figure:hover > .capa h2 {
+        color: black;
         margin-top: 10px;
         margin-left: 100px;
         margin-bottom: 15px;
-        font-size: 30px !important; }
+        font-size: 40px !important;
+        filter: drop-shadow(0 3px 1px white);
+        background: #f3923d;
+        border-radius: 14px; }
       #selector figure:hover > .capa img {
         position: absolute;
         transition: all 500ms ease-in-out;
@@ -142,9 +163,17 @@ div div {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  background-color: rgba(172, 172, 172, 0.5); }
   .products__products div {
-    width: 50%; }
+    width: 48%; }
+    .products__products div h2 {
+      background-color: #f3923d;
+      color: #ffffff; }
+
+.empanadasYtartas h3, .empanadasYtartas p {
+  font-size: 1.3rem; }
 
 .products__botones {
   margin: 9px;
@@ -170,7 +199,8 @@ div div {
 
 #contacto div h2 {
   grid-area: h2;
-  color: black; }
+  color: black;
+  font-size: 1.3rem; }
 
 .MedioDeContacto1 {
   grid-area: aside1; }
@@ -186,7 +216,8 @@ div div {
   text-align: center;
   justify-content: center; }
   .contacto__h2 h2 {
-    font-size: larger !important; }
+    font-size: 1.7rem !important;
+    color: brown !important; }
   .contacto__h2 img {
     width: 20%; }
 
@@ -195,10 +226,10 @@ div div {
   margin-top: 20px;
   width: 80%; }
   .aboutUs__Texto h5 {
-    font-size: larger !important; }
+    font-size: 2.1rem; }
   .aboutUs__Texto p {
     text-align: center;
-    font-size: 21px !important; }
+    font-size: 1.3rem; }
   .aboutUs__Texto img {
     height: 90%; }
 
@@ -215,4 +246,5 @@ footer {
     footer a h2 {
       color: white; }
   footer h2 {
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: medium; }
