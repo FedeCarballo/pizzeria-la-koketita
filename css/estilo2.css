@@ -29,8 +29,6 @@
     font-size: small !important; } }
 
 * {
-  padding: 0px;
-  font-size: 1;
   list-style-type: none;
   font-family: 'Charm', cursive; }
 
@@ -44,15 +42,11 @@ nav {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-flow: row nowrap;
-  background-color: #f3923d; }
+  justify-content: space-around; }
   nav a {
     text-decoration: none;
     color: white !important;
-    text-align: center;
-    flex-grow: 1; }
+    text-align: center; }
     nav a:hover {
       background-color: black;
       border: ridge 1px; }
@@ -181,6 +175,9 @@ div div {
   display: flex;
   justify-content: space-between; }
 
+.precios {
+  font-size: 1.38rem; }
+
 .google {
   margin-top: 15px; }
 
@@ -195,6 +192,7 @@ div div {
   margin: 8px;
   padding: 9px;
   border: solid grey 3px;
+  background-color: #f3923d;
   width: 100%; }
 
 #contacto div h2 {
@@ -219,10 +217,9 @@ div div {
     font-size: 1.7rem !important;
     color: brown !important; }
   .contacto__h2 img {
-    width: 20%; }
+    width: 25%; }
 
 .aboutUs__Texto {
-  display: flex;
   margin-top: 20px;
   width: 80%; }
   .aboutUs__Texto h5 {
