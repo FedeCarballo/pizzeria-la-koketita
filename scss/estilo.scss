@@ -257,12 +257,10 @@ a {
     border:solid grey 3px;
     background-color: $colorDeCuerpo;
     width: 100%;
-    
 }
 
 #contacto div h2{
     grid-area: h2;
-    color: rgb(0, 0, 0);
     font-size: 1.3rem;
 }
 .MedioDeContacto1{
@@ -287,7 +285,11 @@ a {
         width: 25%;
     }
 }
-
+.MedioDeContacto,.MedioDeContacto2,.MedioDeContacto3{
+    h2{
+    color:white !important;
+    }
+}
 //contacto//
 //aboutUS
 .aboutUs__Texto{
@@ -304,6 +306,13 @@ a {
     }
 }
 //aboutUS
+//boton de opiniones
+.boton{
+    background-color: $colorDeCuerpo;
+    border: $colorDeCuerpo;
+    color: white;
+} 
+//boton de opiniones
 //footer//
 footer{
     @include MyP(0px,0px);

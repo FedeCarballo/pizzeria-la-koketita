@@ -197,7 +197,6 @@ div div {
 
 #contacto div h2 {
   grid-area: h2;
-  color: black;
   font-size: 1.3rem; }
 
 .MedioDeContacto1 {
@@ -219,6 +218,9 @@ div div {
   .contacto__h2 img {
     width: 25%; }
 
+.MedioDeContacto h2, .MedioDeContacto2 h2, .MedioDeContacto3 h2 {
+  color: white !important; }
+
 .aboutUs__Texto {
   margin-top: 20px;
   width: 80%; }
@@ -229,6 +231,11 @@ div div {
     font-size: 1.3rem; }
   .aboutUs__Texto img {
     height: 90%; }
+
+.boton {
+  background-color: #f3923d;
+  border: #f3923d;
+  color: white; }
 
 footer {
   margin: 0px;
